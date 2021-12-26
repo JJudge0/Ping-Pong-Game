@@ -6,7 +6,7 @@ import javax.swing.*;
 public class GamePanel extends JPanel implements Runnable {
     
      static final int GAME_WIDTH=1000; //Note: Must be static because if there is more than one instance of the gamepanel class it will use the same variable instead of individual and final keyword allows us not to modify midway through.
-     static final int GAME_HEIGHT=(int)(GAME_WIDTH * (0.6)); //chaning to 6ft to 10ft  cannot put division must put int otherwise won't display panel.
+     static final int GAME_HEIGHT=(int)(GAME_WIDTH * (0.5555)); //chaning to 6ft to 10ft  cannot put division must put int otherwise won't display panel.
      static final Dimension SCREEN_SIZE = new Dimension(GAME_WIDTH,GAME_HEIGHT);
      static final int BALL_DIAMETER=20;
      static final int PADDLE_WIDTH=25;
@@ -126,7 +126,7 @@ if(ball.x >= GAME_WIDTH-BALL_DIAMETER) {
 }
     }
 
-    public  void Run()
+    public  void run()
     {
           //Game loop
         long Last_Time = System.nanoTime();
@@ -143,7 +143,7 @@ if(ball.x >= GAME_WIDTH-BALL_DIAMETER) {
                 Check_Collisions();
                 repaint();
                 Delta--;
-               System.out.println("TEST");
+               //System.out.println("TEST");
             }
 
             
@@ -170,13 +170,5 @@ if(ball.x >= GAME_WIDTH-BALL_DIAMETER) {
 
 
     }
-
-    @Override
-    public void run() {
-        // TODO Auto-generated method stub
-        
-    }
-
-
 }
 
