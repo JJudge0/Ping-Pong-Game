@@ -11,16 +11,21 @@ public class Score extends Rectangle  {
     int Score_Player1; //Holds score of player1
     int Score_Player2; //Holds score of player2
 
-    public  Score() //score
-    {
-  
-
-    }
-
-    public void Draw(Graphics g)
+    public  Score(int GAME_WIDTH, int GAME_HEIGHT) //score
     {
 
-
+    Score.GAME_WIDTH = GAME_WIDTH;
+    Score.GAME_HEIGHT = GAME_HEIGHT;
     }
-
+    public void draw(Graphics g) {
+    g.setColor(Color.white);
+    g.setFont(new Font("Consolas",Font.PLAIN,60));
+    
+    g.drawLine(GAME_WIDTH/2, 0, GAME_WIDTH/2, GAME_HEIGHT);
+    
+    g.drawString(String.valueOf(Score_Player1/10)+String.valueOf(Score_Player1%10), (GAME_WIDTH/2)-85, 50);
+    g.drawString(String.valueOf(Score_Player2/10)+String.valueOf(Score_Player2%10), (GAME_WIDTH/2)+20, 50);
 }
+}
+
+
