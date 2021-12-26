@@ -3,8 +3,12 @@ import java.awt.*;
 import java.awt.event.*;
 import java.util.*;
 import javax.swing.*;
-public class Ball {
+public class Ball extends Rectangle  {
     
+
+    Random random;
+    int xVelocity; //How fast the ball is moving on the x-axis
+    int yVelocity; //How fast the ball is moving on the y-axis
     public  Ball()
     {
     
