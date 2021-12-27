@@ -18,8 +18,8 @@ public class Score extends Rectangle  {
     Score.GAME_HEIGHT = GAME_HEIGHT;
     }
     public void draw(Graphics g) {
-    g.setColor(Color.white);
-    g.setFont(new Font("Consolas",Font.PLAIN,60));
+    g.setColor(Color.WHITE);
+    g.setFont(new Font("C",Font.BOLD,60));
     
     g.drawLine(GAME_WIDTH/2, 0, GAME_WIDTH/2, GAME_HEIGHT);
     

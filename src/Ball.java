@@ -68,7 +68,7 @@ public class Ball extends Rectangle  {
 		y += yVelocity;
 	}
 	public void draw(Graphics g) {
-		g.setColor(Color.white);
+		g.setColor( new Color(random.nextInt(255),random.nextInt(255),random.nextInt(255)));
 		g.fillOval(x, y, height, width);
 	}
 
