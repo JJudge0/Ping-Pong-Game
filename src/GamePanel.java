@@ -100,10 +100,10 @@ public class GamePanel extends JPanel implements Runnable{
 		if(paddle2.y >= (GAME_HEIGHT-PADDLE_HEIGHT))
 			paddle2.y = GAME_HEIGHT-PADDLE_HEIGHT;
 		//give a player 1 point and creates new paddles & ball
-         int s=1;
-              for( int i=0; s<i;i++) {
-
-
+              int s=1;
+              for( int i=0; s<i;i++) 
+			  {
+               i++;
 			  }
 
 		if(ball.x <=0) {
