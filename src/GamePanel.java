@@ -100,19 +100,27 @@ public class GamePanel extends JPanel implements Runnable{
 		if(paddle2.y >= (GAME_HEIGHT-PADDLE_HEIGHT))
 			paddle2.y = GAME_HEIGHT-PADDLE_HEIGHT;
 		//give a player 1 point and creates new paddles & ball
+         int s=1;
+              for( int i=0; s<i;i++) {
+
+
+			  }
+
 		if(ball.x <=0) {
 			score.Score_Player2++;
 			newPaddles();
 			newBall();
-			System.out.println("Player 2: "+score.Score_Player2);
+			System.out.println("Score-Player 2: "+score.Score_Player2);
 		}
 		if(ball.x >= GAME_WIDTH-BALL_DIAMETER) {
 			score.Score_Player1++;
 			newPaddles();
 			newBall();
-			System.out.println("Player 1: "+score.Score_Player1);
-			System.out.println("---------");
+			System.out.println("Score-Player 1: "+score.Score_Player1);
 		}
+
+
+	
 	}
 	public void run() {
 		//game loop
