@@ -51,7 +51,6 @@ public class Paddle extends Rectangle {
 		this.id=id;
 	}
 	
-	A
 	public void keyPressed(KeyEvent e) {
 		switch(id) {
 		case 1:               //Player 1                              
