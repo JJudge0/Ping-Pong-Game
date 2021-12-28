@@ -54,10 +54,10 @@ public class Paddle extends Rectangle {
 	public void keyPressed(KeyEvent e) {
 		switch(id) {
 		case 1:               //Player 1                              
-			if(e.getKeyCode()==KeyEvent.VK_W) {   //Uses W key to go up
+			if(e.getKeyCode()==KeyEvent.VK_W) {   //Uses W key to go up asdadadasda
 				setYDirection(-speed);
 			}
-			if(e.getKeyCode()==KeyEvent.VK_S) {   //Uses S key to go down ssss
+			if(e.getKeyCode()==KeyEvent.VK_S) {   //Uses S key to go down ssss asdsadsadsada
 				setYDirection(speed); 
 			}
 			break;
