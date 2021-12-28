@@ -1,11 +1,11 @@
 package src;
 import java.awt.*;
 import javax.swing.*;
-public class GameFrame extends JFrame {
+public class Game_Frame extends JFrame {
     
 GamePanel Panel;
 
-public GameFrame()
+public Game_Frame()
 {
     Panel = new GamePanel();
     this.add(Panel);
