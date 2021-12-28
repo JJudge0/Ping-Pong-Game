@@ -42,8 +42,8 @@ public class Paddle extends Rectangle {
 
     // }
 
-    int id;
-	int yVelocity;
+    int id; // id1 for player1 and  id2 for player2
+	int yVelocity;  // How fast the paddle moves on the frame
 	int speed = 10; // Speed for the Paddles
 	
 	Paddle(int x, int y, int PADDLE_WIDTH, int PADDLE_HEIGHT, int id){
@@ -61,7 +61,7 @@ public class Paddle extends Rectangle {
 				setYDirection(speed); 
 			}
 			break;
-		case 2:
+		case 2:               // Player 2
 			if(e.getKeyCode()==KeyEvent.VK_UP) {   //Uses Arrow up key to go up
 				setYDirection(-speed);
 			}
