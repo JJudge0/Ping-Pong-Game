@@ -108,15 +108,15 @@ public class GamePanel extends JPanel implements Runnable{
 
 		if(ball.x <=0) {
 			score.Score_Player2++;
-			newPaddles();
-			newBall();
-			System.out.println("Score-Player 2: "+score.Score_Player2);
+			newPaddles();  // Everytime a player scores the paddle is repositioned to the middle
+			newBall(); // ball is randomly
+			System.out.println("Score of Player 2: "+score.Score_Player2); 
 		}
 		if(ball.x >= GAME_WIDTH-BALL_DIAMETER) {
 			score.Score_Player1++;
 			newPaddles();
 			newBall();
-			System.out.println("Score-Player 1: "+score.Score_Player1);
+			System.out.println("Score of Player 1: "+score.Score_Player1);
 		}
 
 
