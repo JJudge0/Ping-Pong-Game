@@ -57,8 +57,8 @@ public class Paddle extends Rectangle {
 			if(e.getKeyCode()==KeyEvent.VK_W) {   //Uses W key to go up
 				setYDirection(-speed);
 			}
-			if(e.getKeyCode()==KeyEvent.VK_S) {   //Uses S key to go down
-				setYDirection(speed);
+			if(e.getKeyCode()==KeyEvent.VK_S) {   //Uses S key to go down ssss
+				setYDirection(speed); 
 			}
 			break;
 		case 2:
