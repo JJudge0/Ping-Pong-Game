@@ -1,7 +1,7 @@
 # Ping-Pong-Game
 A personal project of which is a 2 player ping pong game using java FX. 
 
-Snake Game Main tasks: 
+Ping Pong Game Main tasks: 
 
 ### The program should include the following: GamePanel,Apple,Snake,ScoreBoard,GameOver message;
 #### GamePanel-- A grid of which houses the apple and snake along with a scoreboard.
