@@ -99,9 +99,9 @@ public class Paddle extends Rectangle {
 	}
 	public void draw(Graphics g) {
 		if(id==1)
-			g.setColor(Color.blue);
+			g.setColor(Color.blue); // PADDLE 1
 		else
-			g.setColor(Color.red);
+			g.setColor(Color.red); // PADDLE 2
 		g.fillRect(x, y, width, height);
 	}
 }
