@@ -11,12 +11,13 @@ public class Ball extends Rectangle  {
 	int yVelocity;
 	int initialSpeed = 2;
 	
-	Ball(int x, int y, int width, int height){
-		super(x,y,width,height);
+	Ball(int x, int y, int width, int height)  
+	{
+		super(x,y,width,height); // Width and height is ball diameter 
 		random = new Random();
-		int randomXDirection = random.nextInt(2);
-		if(randomXDirection == 0)
-			randomXDirection--;
+		int randomXDirection = random.nextInt(2); 
+		if(randomXDirection == 0) // Uses 0 to go left
+			randomXDirection --; 
         Set_X_Direction(randomXDirection*initialSpeed);
 		
 		int randomYDirection = random.nextInt(2);
@@ -38,8 +39,8 @@ public class Ball extends Rectangle  {
 	}
 	public void draw(Graphics g) {
 		// g.setColor( new Color(random.nextInt(255),random.nextInt(255),random.nextInt(255))); Note: // Multi colored ball DISABLED FOR NOW!
-		g.setColor(Color.GREEN);
-		g.fillOval(x, y, height, width);
+		g.setColor(Color.GREEN); 
+		g.fillOval(x, y, height, width); //height and width is the ball diameter from the Game Panel class which is set to default 20
 	}
 
 }

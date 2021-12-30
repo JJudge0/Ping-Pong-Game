@@ -35,8 +35,8 @@ public class Game_Panel extends JPanel implements Runnable{
 
 	
 	public void newBall() {
-		random = new Random();
-		ball = new Ball((GAME_WIDTH/2)-(BALL_DIAMETER/2),random.nextInt(GAME_HEIGHT-BALL_DIAMETER),BALL_DIAMETER,BALL_DIAMETER);
+		random = new Random(); // Randomizes the ball position in this case
+		ball = new Ball((GAME_WIDTH/2)-(BALL_DIAMETER/2),random.nextInt(GAME_HEIGHT-BALL_DIAMETER),BALL_DIAMETER,BALL_DIAMETER);  //[(GAME_WIDTH/2)-(BALL_DIAMETER/2) sets the ball in the middle of the x axis], [random.nextInt(GAME_HEIGHT-BALL_DIAMETER) sets the ball for the y axist]
 	}
 	public void newPaddles() {       // declares position of the 
 		paddle1 = new Paddle(0,(GAME_HEIGHT/2)-(PADDLE_HEIGHT/2),PADDLE_WIDTH,PADDLE_HEIGHT,1); // Declares positions of the Paddles on the GameFrame, places on the paddle on the x position left hand side
@@ -62,7 +62,8 @@ public class Game_Panel extends JPanel implements Runnable{
 		paddle2.move();
 		ball.move();
 	}
-	public void checkCollision() {
+	public void checkCollision()  // Ensures the Paddles and balls are kept within the frames border.
+	{
 		
 		//bounce ball off top & bottom window edges
 		if(ball.y <=0) {
