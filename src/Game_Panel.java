@@ -38,9 +38,9 @@ public class Game_Panel extends JPanel implements Runnable{
 		random = new Random();
 		ball = new Ball((GAME_WIDTH/2)-(BALL_DIAMETER/2),random.nextInt(GAME_HEIGHT-BALL_DIAMETER),BALL_DIAMETER,BALL_DIAMETER);
 	}
-	public void newPaddles() {
-		paddle1 = new Paddle(0,(GAME_HEIGHT/2)-(PADDLE_HEIGHT/2),PADDLE_WIDTH,PADDLE_HEIGHT,1);
-		paddle2 = new Paddle(GAME_WIDTH-PADDLE_WIDTH,(GAME_HEIGHT/2)-(PADDLE_HEIGHT/2),PADDLE_WIDTH,PADDLE_HEIGHT,2);
+	public void newPaddles() {       // declares position of the 
+		paddle1 = new Paddle(0,(GAME_HEIGHT/2)-(PADDLE_HEIGHT/2),PADDLE_WIDTH,PADDLE_HEIGHT,1); // Declares positions of the Paddles on the GameFrame, places on the paddle on the x position left hand side
+		paddle2 = new Paddle(GAME_WIDTH-PADDLE_WIDTH,(GAME_HEIGHT/2)-(PADDLE_HEIGHT/2),PADDLE_WIDTH,PADDLE_HEIGHT,2); // Remember Id=1 is player 1 and Id=2 is player 2
 	}
 	public void paint(Graphics g) {
 		image = createImage(getWidth(),getHeight());
@@ -56,8 +56,9 @@ public class Game_Panel extends JPanel implements Runnable{
         Toolkit.getDefaultToolkit().sync(); // Helps with the animation and the pixels depending on the screen size of the user running the game
 
 	}
-	public void move() {
+	public void move() { // Paddles lag when they move on the screen so we call Both of the paddles.
 		paddle1.move();
+	//	paddle2.move(); // TESTING: Paddle 2 will lag and paddle 1 won't
 		paddle2.move();
 		ball.move();
 	}
@@ -91,11 +92,11 @@ public class Game_Panel extends JPanel implements Runnable{
 			ball.Set_X_Direction(-ball.xVelocity);
 			ball.Set_y_Direction(ball.yVelocity);
 		}
-		//stops paddles at window edges
+		//stops paddles from going off the screen.
 		if(paddle1.y<=0)
 			paddle1.y=0;
-		if(paddle1.y >= (GAME_HEIGHT-PADDLE_HEIGHT))
-			paddle1.y = GAME_HEIGHT-PADDLE_HEIGHT;
+		if(paddle1.y >= (GAME_HEIGHT-PADDLE_HEIGHT)) // When paddle 1 is moving up and down
+			paddle1.y = GAME_HEIGHT-PADDLE_HEIGHT; // Ensures the paddle is kept within this boundary borders
 		if(paddle2.y<=0)
 			paddle2.y=0;
 		if(paddle2.y >= (GAME_HEIGHT-PADDLE_HEIGHT))
@@ -132,7 +133,7 @@ public class Game_Panel extends JPanel implements Runnable{
 			delta += (now -lastTime)/ns;
 			lastTime = now;
 			if(delta >=1) {
-				move();
+				move();   // This helps with the lags so after each iteration it refreshes allowing the movement of the paddles to be more smooth
 				checkCollision();
 				repaint();
 				delta--;
@@ -144,9 +145,9 @@ public class Game_Panel extends JPanel implements Runnable{
 	public class AL extends KeyAdapter{
 		public void keyPressed(KeyEvent e) 
 		{
-			paddle1.keyPressed(e);
-			paddle2.keyPressed(e);
-		}
+			paddle1.keyPressed(e); // Allows Player one to move the paddle vertically on the GameFrame
+			paddle2.keyPressed(e); // Allows Player two to move the paddle vertically on the GameFrame
+		} 
 		public void keyReleased(KeyEvent e) 
 		{
 			paddle1.keyReleased(e);
