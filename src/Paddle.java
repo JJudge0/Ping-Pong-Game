@@ -20,7 +20,7 @@ public class Paddle extends Rectangle {
 		switch(id) {
 		case 1:               //Player 1                               
 			if(e.getKeyCode()==KeyEvent.VK_W) {   //Uses W key to go up 
-			    setYDirection(+speed); 
+			    setYDirection(-speed); 
 			}
 			if(e.getKeyCode()==KeyEvent.VK_S) {   //Uses S key to go down 
 				setYDirection(speed); 
@@ -28,7 +28,7 @@ public class Paddle extends Rectangle {
 			break;
 		case 2:               // Player 2
 			if(e.getKeyCode()==KeyEvent.VK_UP) {   //Uses Arrow up key to go up
-				setYDirection(+speed);
+				setYDirection(-speed);
 			}
 			if(e.getKeyCode()==KeyEvent.VK_DOWN) {  //Uses Arrow down key to go down
 				setYDirection(speed);
