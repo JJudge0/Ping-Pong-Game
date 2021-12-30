@@ -33,6 +33,10 @@ Ping Pong Game Main tasks:
 ![image](https://user-images.githubusercontent.com/73240114/147762740-9c25f1c3-1bdc-4ed5-8983-7a4eb827ec56.png)
 
 
+**Displays scores of Player1 and Player2 **: 
+
+![image](https://user-images.githubusercontent.com/73240114/147763811-05074b83-bdec-45d9-bf44-d9d98582b8ae.png)
+
 
 ## Requirements 🔧
 Java version 8 or higher.
