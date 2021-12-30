@@ -15,10 +15,10 @@ Ping Pong Game Main tasks:
 ### Contains 6 files called:
 ### 1) Ball  file.
 ### 2) Game_Frame file.
-### 3) Game  file.
-### 4) Ball  file.
-### 5) Game file.
-### 6) Snake  file.
+### 3) Game_Panel file.
+### 4) Paddle file.
+### 5) Pong_Game file.
+### 6) Score file.
 
 
 ## Screenshots
