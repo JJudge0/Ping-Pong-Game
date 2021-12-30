@@ -37,8 +37,8 @@ public class Game_Panel extends JPanel implements Runnable{
 	
 	public void newBall() 
 	{
-		random = new Random(); // Randomizes the ball position in this case
-		ball = new Ball((GAME_WIDTH/2)-(BALL_DIAMETER/2),random.nextInt(GAME_HEIGHT-BALL_DIAMETER),BALL_DIAMETER,BALL_DIAMETER);  //[(GAME_WIDTH/2)-(BALL_DIAMETER/2) sets the ball in the middle of the x axis], [random.nextInt(GAME_HEIGHT-BALL_DIAMETER) sets the ball for the y axist]
+		random = new Random(); // Randomizes the ball  position in this case
+		ball = new Ball((GAME_WIDTH/2)-(BALL_DIAMETER/2),random.nextInt(GAME_HEIGHT-BALL_DIAMETER),BALL_DIAMETER,BALL_DIAMETER);  //[(GAME_WIDTH/2)-(BALL_DIAMETER/2) sets the ball in the middle of the x axis], [random.nextInt(GAME_HEIGHT-BALL_DIAMETER) randomizes the vertical position of the ball on y axis when the game starts]
 	}
 	public void newPaddles() 
 	{       // declares position of the 
@@ -131,7 +131,7 @@ public class Game_Panel extends JPanel implements Runnable{
 		{
 			score.Score_Player2++;
 			newPaddles();  // Everytime a player scores the paddle is repositioned to the middle
-			newBall(); // ball is randomly
+			newBall(); 
 			System.out.println("Score of Player 2: "+score.Score_Player2); 
 		}
 		if(ball.x >= GAME_WIDTH-BALL_DIAMETER) 

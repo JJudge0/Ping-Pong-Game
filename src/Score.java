@@ -17,14 +17,16 @@ public class Score extends Rectangle  {
     Score.GAME_WIDTH = GAME_WIDTH;
     Score.GAME_HEIGHT = GAME_HEIGHT;
     }
-    public void draw(Graphics g) {
+    public void draw(Graphics g)  // Declaring 
+    {
     g.setColor(Color.WHITE);
-    g.setFont(new Font("Arial",Font.BOLD,60));
+    g.setFont(new Font("Consolas",Font.BOLD,60));
     
-    g.drawLine(GAME_WIDTH/2, 0, GAME_WIDTH/2, GAME_HEIGHT);
+    g.drawLine(GAME_WIDTH/2, 0, GAME_WIDTH/2, GAME_HEIGHT); // Draws the line in the middle of the game
     
-    g.drawString(String.valueOf(Score_Player1/10)+String.valueOf(Score_Player1%10), (GAME_WIDTH/2)-85, 50);
-    g.drawString(String.valueOf(Score_Player2/10)+String.valueOf(Score_Player2%10), (GAME_WIDTH/2)+20, 50);
+    g.drawString(String.valueOf(Score_Player1/10)+String.valueOf(Score_Player1%10), (GAME_WIDTH/2)-100, 300); // Draws scores on the screen for Player 1 [Where '300' is put '50' this should display at the top of the screen]
+    g.drawString(String.valueOf(Score_Player2/10)+String.valueOf(Score_Player2%10), (GAME_WIDTH/2)+30, 590); // Draws scores on the screen for Player 2 [Where '300' is put '50' this should display at the top of the screen]
+    // PUT "%10" so it displays double digits    [300] is middle of the screen, [50] is top of the screen, [590] is for bottom of the screen
 }
 }
 
