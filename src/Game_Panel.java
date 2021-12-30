@@ -57,7 +57,8 @@ public class Game_Panel extends JPanel implements Runnable{
         Toolkit.getDefaultToolkit().sync(); // Helps with the animation and the pixels depending on the screen size of the user running the game
 
 	}
-	public void move() { // Paddles lag when they move on the screen so we call Both of the paddles.
+	public void move() // Paddles lag when they move on the screen so we call Both of the paddles.
+	{ 
 		paddle1.move();
 	//	paddle2.move(); // TESTING: Paddle 2 will lag and paddle 1 won't
 		paddle2.move();
