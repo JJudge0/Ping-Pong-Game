@@ -5,17 +5,20 @@ Ping Pong Game Main tasks:
 
 ### The program should include the following: GamePanel,Apple,Snake,ScoreBoard,GameOver message;
 #### GamePanel-- A grid of which houses the apple and snake along with a scoreboard.
-#### Apple: Of which should be randomly generated on the grid.
+#### Ball: Of which should be randomly generated on the grid.
 #### Snake: Should grow everytime an apple is eaten by the snake. 
 #### ScoreBoard: Should display the score when a snake eats a apple.
 #### GameOver: A gameover when the user dies by eating itself, crashing into border.
 
 #### -----------------------------------------------------------Personal Project-----------------------------------------------
 
-### Contains 3 files called:
-### 1) Game  file.
-### 2) Game file.
-### 3) Snake  file.
+### Contains 6 files called:
+### 1) Game_Frame file.
+### 2) Game_Panel file.
+### 3) Ball  file.
+### 4) Paddle file.
+### 5) Pong_Game file.
+### 6) Score file.
 
 
 ## Screenshots
