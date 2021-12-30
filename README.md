@@ -3,12 +3,22 @@
 
 Ping Pong Game Main tasks: 
 
- The program should include the following: 2 Paddles,Ball,ScoreBoard;
- 1) GamePanel-- A grid of which houses the apple and snake along with a scoreboard.
- 2) Ball: Of which should be randomly generated on the grid.
-#### Snake: Should grow everytime an apple is eaten by the snake. 
-#### ScoreBoard: Should display the score when a snake eats a apple.
-#### GameOver: A gameover when the user dies by eating itself, crashing into border.
+2 players must be able to move there paddles vertically ensuring the ball doesn't go into 1 or the other players side.
+Scores must be displayed of each player
+
+ The program should include the following: 2 Paddles,Ball,ScoreBoard, Game Panel, Game Frame;
+ 1) GameFrame-- Houses all of the components of the Game Panel.
+ 2) GamePanel-- Includes the rules aswell the ball and paddles that are going to be displayed on the Game Frame.
+#### Paddles: 2 Players can play the game: 
+> Player 1 can play with Arrow Keys. 
+> 
+> Player 2 can play with W and S keys.
+> 
+> W is for UP
+> 
+> S is for Down
+#### ScoreBoard: Which is displayed at the top of the screen score for player 1 and score for player 2.
+#### Ball: The ball increases in speed the longer the game goes on for until 1 or the other player gets a point added on.
 
 #### -----------------------------------------------------------Personal Project-----------------------------------------------
 
