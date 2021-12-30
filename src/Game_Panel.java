@@ -83,11 +83,11 @@ public class Game_Panel extends JPanel implements Runnable{
 		if(ball.intersects(paddle1)) // Ensures if 2 objects collides it won't go through the paddle
 		{
 			ball.xVelocity = Math.abs(ball.xVelocity); 
-			ball.xVelocity++; //OPTIONAL for more difficulty after the ball hits the paddle it should increase in speed.
+			ball.xVelocity++; //OPTIONAL for more difficulty after the ball hits the paddle it should increase in speed. Note:Increases speed for x axis of the ball
 			if(ball.yVelocity>0)
-				ball.yVelocity++; //OPTIONAL for more difficulty after the ball hits the paddle it should increase in speed.
+				ball.yVelocity++; //OPTIONAL for more difficulty after the ball hits the paddle it should increase in speed. Note:Increases speed for y axis of the ball
 			else
-				ball.yVelocity--;
+				ball.yVelocity--; 
 			ball.Set_X_Direction(ball.xVelocity);
 			ball.Set_y_Direction(ball.yVelocity);
 		}
