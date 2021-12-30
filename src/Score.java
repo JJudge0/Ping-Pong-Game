@@ -19,7 +19,7 @@ public class Score extends Rectangle  {
     }
     public void draw(Graphics g) {
     g.setColor(Color.WHITE);
-    g.setFont(new Font("C",Font.BOLD,60));
+    g.setFont(new Font("Arial",Font.BOLD,60));
     
     g.drawLine(GAME_WIDTH/2, 0, GAME_WIDTH/2, GAME_HEIGHT);
     

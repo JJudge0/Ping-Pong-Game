@@ -7,7 +7,7 @@ import javax.swing.*;
 public class Game_Panel extends JPanel implements Runnable{
 
 	static final int GAME_WIDTH = 1000; //Note: Must be static because if there is more than one instance of the gamepanel class it will use the same variable instead of individual and final keyword allows us not to modify midway through.
-	static final int GAME_HEIGHT=(int)(GAME_WIDTH * (0.6)); //changing to 6ft to 10ft  cannot put division must put int otherwise won't display panel.
+	static final int GAME_HEIGHT=(int)(GAME_WIDTH * (0.6)); //Ping Pong table measurements are 6ft to 10ft. NOTE: DO NOT PUT 6/10  cannot put division must put int otherwise won't display panel.
 	static final Dimension SCREEN_SIZE = new Dimension(GAME_WIDTH,GAME_HEIGHT);
 	static final int BALL_DIAMETER = 20;
 	static final int PADDLE_WIDTH = 25;
@@ -26,8 +26,8 @@ public class Game_Panel extends JPanel implements Runnable{
 		newBall();
 		score = new Score(GAME_WIDTH,GAME_HEIGHT);
 		this.setFocusable(true);
-		this.addKeyListener(new AL());
-		this.setPreferredSize(SCREEN_SIZE);
+		this.addKeyListener(new AL()); 
+		this.setPreferredSize(SCREEN_SIZE); // Uses the ping pong table measurements
 		
 		Game_Thread = new Thread(this);
 		Game_Thread.start();
@@ -46,14 +46,14 @@ public class Game_Panel extends JPanel implements Runnable{
 		image = createImage(getWidth(),getHeight());
 		graphics = image.getGraphics();
 		draw(graphics);
-		g.drawImage(image,0,0,this);
+		g.drawImage(image,0,0,this);  // Want to pass image and the X coordinate which is '0' and the Y coordinate which is '0' and the Game panel class
 	}
 	public void draw(Graphics g) {
 		paddle1.draw(g);
 		paddle2.draw(g);
 		ball.draw(g);
 		score.draw(g);
-         Toolkit.getDefaultToolkit().sync(); // I forgot to add this line of code in the video, it helps with the animation
+        Toolkit.getDefaultToolkit().sync(); // Helps with the animation and the pixels depending on the screen size of the user running the game
 
 	}
 	public void move() {
@@ -120,7 +120,7 @@ public class Game_Panel extends JPanel implements Runnable{
 			System.out.println("Score of Player 1: "+score.Score_Player1);
 		}
 	}
-	
+
 	public void run() {
 		//game loop
 		long lastTime = System.nanoTime();
@@ -140,12 +140,15 @@ public class Game_Panel extends JPanel implements Runnable{
 			}
 		}
 	}
+
 	public class AL extends KeyAdapter{
-		public void keyPressed(KeyEvent e) {
+		public void keyPressed(KeyEvent e) 
+		{
 			paddle1.keyPressed(e);
 			paddle2.keyPressed(e);
 		}
-		public void keyReleased(KeyEvent e) {
+		public void keyReleased(KeyEvent e) 
+		{
 			paddle1.keyReleased(e);
 			paddle2.keyReleased(e);
 		}

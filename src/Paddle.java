@@ -8,7 +8,7 @@ public class Paddle extends Rectangle {
 
 
     int id; // id1 for player1 and  id2 for player2
-	int yVelocity;  // How fast the paddle moves on the frame
+	int yVelocity;  // How fast the paddle moves o
 	int speed = 10; // Speed for the Paddles
 	
 	Paddle(int x, int y, int PADDLE_WIDTH, int PADDLE_HEIGHT, int id){

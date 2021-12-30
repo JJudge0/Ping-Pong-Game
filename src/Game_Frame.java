@@ -13,9 +13,9 @@ public Game_Frame()
     this.setResizable(false); // Window cannot be resized by user because contents within the game won't be resized to fit the frame.
     this.setBackground(Color.black); // Background Color
     this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-    this.pack();// NOTE: Allows the Game Panel class to be adjusted on the game frame so it's not to big or small it adjusts accordingly.
+    this.pack();// NOTE: Allows the GameFrame to be adjusted to the Game Panel  so doesn't need to be resized.
     this.setVisible(true); // When the game  is running you can put it too visible 
-   // this.setLocationRelativeTo(null); //Appears on the middle of the screen comment out later.
+    this.setLocationRelativeTo(null); //Appears on the middle of the screen comment out later.
 }
 
 
