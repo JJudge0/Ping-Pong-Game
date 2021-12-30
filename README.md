@@ -4,6 +4,7 @@
 Ping Pong Game Main tasks: 
 
 2 players must be able to move there paddles vertically ensuring the ball doesn't go into 1 or the other players side.
+Scores must be displayed of each player
 
  The program should include the following: 2 Paddles,Ball,ScoreBoard, Game Panel, Game Frame;
  1) GameFrame-- Houses all of the components of the Game Panel.
