@@ -17,7 +17,7 @@ public class Score extends Rectangle  {
     Score.GAME_WIDTH = GAME_WIDTH;
     Score.GAME_HEIGHT = GAME_HEIGHT;
     }
-    public void draw(Graphics g)   // Displaying on the game frame
+    public void draw(Graphics g)   // Displaying on the game fra
     {
     //==============================For the Scores==============================
     g.setColor(Color.WHITE);
