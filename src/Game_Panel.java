@@ -48,8 +48,9 @@ public class Game_Panel extends JPanel implements Runnable{
 		draw(graphics);
 		g.drawImage(image,0,0,this);  // Want to pass image and the X coordinate which is '0' and the Y coordinate which is '0' and the Game panel class
 	}
-	public void draw(Graphics g) {
-		paddle1.draw(g);
+	public void draw(Graphics g)  // Draws the components on the Game Frame
+	{
+		paddle1.draw(g); 
 		paddle2.draw(g);
 		ball.draw(g);
 		score.draw(g);
