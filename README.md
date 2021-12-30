@@ -23,7 +23,7 @@ Ping Pong Game Main tasks:
 
 ## Screenshots
 
-![image](https://user-images.githubusercontent.com/73240114/147762576-df089219-67fe-4210-add9-e039e3589c2f.png)
+![image](https://user-images.githubusercontent.com/73240114/147764309-bbcc7f87-4ea8-4a8e-89bc-6f08401f91c4.png)
 
 
 #### Example
