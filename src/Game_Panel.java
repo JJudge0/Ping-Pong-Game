@@ -62,7 +62,7 @@ public class Game_Panel extends JPanel implements Runnable{
 	public void move() // Paddles lag when they move on the screen so we call Both of the paddles.
 	{ 
 		paddle1.move();
-	//	paddle2.move(); // TESTING: Paddle 2 will lag and paddle 1 won't
+	//	paddle2.move(); // TESTING: Paddle 2 will lag and paddle 1 won't.
 		paddle2.move();
 		ball.move();
 	}
