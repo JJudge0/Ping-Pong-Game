@@ -4,7 +4,7 @@ import java.awt.event.*;
 import java.util.*;
 import javax.swing.*;
 
-public class GamePanel extends JPanel implements Runnable{
+public class Game_Panel extends JPanel implements Runnable{
 
 	static final int GAME_WIDTH = 1000; //Note: Must be static because if there is more than one instance of the gamepanel class it will use the same variable instead of individual and final keyword allows us not to modify midway through.
 	static final int GAME_HEIGHT=(int)(GAME_WIDTH * (0.6)); //changing to 6ft to 10ft  cannot put division must put int otherwise won't display panel.
@@ -21,7 +21,7 @@ public class GamePanel extends JPanel implements Runnable{
 	Ball ball;
 	Score score;
 	
-	GamePanel(){
+	Game_Panel(){
 		newPaddles();
 		newBall();
 		score = new Score(GAME_WIDTH,GAME_HEIGHT);
@@ -32,6 +32,7 @@ public class GamePanel extends JPanel implements Runnable{
 		Game_Thread = new Thread(this);
 		Game_Thread.start();
 	}
+
 	
 	public void newBall() {
 		random = new Random();
@@ -118,10 +119,8 @@ public class GamePanel extends JPanel implements Runnable{
 			newBall();
 			System.out.println("Score of Player 1: "+score.Score_Player1);
 		}
-
-
-	
 	}
+	
 	public void run() {
 		//game loop
 		long lastTime = System.nanoTime();
