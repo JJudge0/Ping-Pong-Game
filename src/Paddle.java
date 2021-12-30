@@ -9,7 +9,7 @@ public class Paddle extends Rectangle {
 
     int id; // id1 for player1 and  id2 for player2
 	int yVelocity;  // How fast the paddle moves o
-	int speed = 10; // Speed for the Paddles set to 10 pixels but I made it negative 10 NOTE: REMEMBER IT'S NEGATIVE 10 on the variable "Speed"
+	int speed = 10; // Speed for the Paddles set to 10 pixels but I made it negative 10 NOTE: REMEMBER IT'S NEGATIVE 10 on the variable "Speed".
 	
 	Paddle(int x, int y, int PADDLE_WIDTH, int PADDLE_HEIGHT, int id){
 		super(x,y,PADDLE_WIDTH,PADDLE_HEIGHT);
