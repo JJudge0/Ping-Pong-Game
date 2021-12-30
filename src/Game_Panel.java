@@ -75,28 +75,29 @@ public class Game_Panel extends JPanel implements Runnable{
 		{
 			ball.Set_y_Direction(-ball.yVelocity); // Goes in the opposite direction set it to "-";
 		}
-		if(ball.y >= GAME_HEIGHT-BALL_DIAMETER) 
+		if(ball.y >= GAME_HEIGHT-BALL_DIAMETER)  // Check balls diameter to ensure it's not big enough or small enough to bounce off the top and bottom walls of the game frame
 		{
 			ball.Set_y_Direction(-ball.yVelocity);
 		}
-		//bounce ball off paddles
-		if(ball.intersects(paddle1)) 
+		// Ensures the ball bounces of the paddle and doesn't go through it for Paddle 1
+		if(ball.intersects(paddle1)) // Ensures if 2 objects collides it won't go through the paddle
 		{
-			ball.xVelocity = Math.abs(ball.xVelocity);
-			ball.xVelocity++; //optional for more difficulty
+			ball.xVelocity = Math.abs(ball.xVelocity); 
+			ball.xVelocity++; //OPTIONAL for more difficulty after the ball hits the paddle it should increase in speed.
 			if(ball.yVelocity>0)
-				ball.yVelocity++; //optional for more difficulty
+				ball.yVelocity++; //OPTIONAL for more difficulty after the ball hits the paddle it should increase in speed.
 			else
 				ball.yVelocity--;
 			ball.Set_X_Direction(ball.xVelocity);
 			ball.Set_y_Direction(ball.yVelocity);
 		}
+		// Ensures the ball bounces of the paddle and doesn't go through it for Paddle 2
 		if(ball.intersects(paddle2)) 
 		{
 			ball.xVelocity = Math.abs(ball.xVelocity);
-			ball.xVelocity++; //optional for more difficulty
+			ball.xVelocity++; //OPTIONAL for more difficulty after the ball hits the paddle it should increase in speed.
 			if(ball.yVelocity>0)
-				ball.yVelocity++; //optional for more difficulty
+				ball.yVelocity++; //OPTIONAL for more difficulty after the ball hits the paddle it should increase in speed.
 			else
 				ball.yVelocity--;
 			ball.Set_X_Direction(-ball.xVelocity);
