@@ -12,10 +12,13 @@ Ping Pong Game Main tasks:
 
 #### -----------------------------------------------------------Personal Project-----------------------------------------------
 
-### Contains 3 files called:
-### 1) Game  file.
-### 2) Game file.
-### 3) Snake  file.
+### Contains 6 files called:
+### 1) Ball  file.
+### 2) Game_Frame file.
+### 3) Game  file.
+### 4) Ball  file.
+### 5) Game file.
+### 6) Snake  file.
 
 
 ## Screenshots
