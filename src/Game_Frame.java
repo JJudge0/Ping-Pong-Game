@@ -11,7 +11,7 @@ public Game_Frame()
     this.add(Panel);
     this.setTitle("Ping Pong Game by JJudge0");
     this.setResizable(false); // Window cannot be resized by user because contents within the game won't be resized to fit the frame.
-    this.setBackground(Color.black); // Background Color
+    this.setBackground(Color.black); // Background Color for the Game Frame.
     this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     this.pack();// NOTE: Allows the GameFrame to be adjusted to the Game Panel  so doesn't need to be resized.
     this.setVisible(true); // When the game  is running you can put it too visible 

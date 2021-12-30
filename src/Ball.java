@@ -38,7 +38,7 @@ public class Ball extends Rectangle  {
 		y += yVelocity;
 	}
 	public void draw(Graphics g) {
-		// g.setColor( new Color(random.nextInt(255),random.nextInt(255),random.nextInt(255))); Note: // Multi colored ball DISABLED FOR NOW!
+		// g.setColor( new Color(random.nextInt(255),random.nextInt(255),random.nextInt(255))); Note: // Multi colored ball DISABLED FOR NOW!!
 		g.setColor(Color.GREEN); 
 		g.fillOval(x, y, height, width); //height and width is the ball diameter from the Game Panel class which is set to default 20
 	}
