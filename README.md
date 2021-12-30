@@ -3,7 +3,7 @@
 
 Ping Pong Game Main tasks: 
 
- The program should include the following: GamePanel,Apple,Snake,ScoreBoard,GameOver message;
+ The program should include the following: 2 Paddles,Ball,ScoreBoard;
  1) GamePanel-- A grid of which houses the apple and snake along with a scoreboard.
  2) Ball: Of which should be randomly generated on the grid.
 #### Snake: Should grow everytime an apple is eaten by the snake. 
@@ -23,13 +23,19 @@ Ping Pong Game Main tasks:
 
 ## Screenshots
 
-![image](https://user-images.githubusercontent.com/73240114/147375838-79dee557-631a-433a-8920-306de5bfd43f.png)
+![image](https://user-images.githubusercontent.com/73240114/147764309-bbcc7f87-4ea8-4a8e-89bc-6f08401f91c4.png)
+
 
 #### Example
 
-Going into the **Game Over Message with Scoreboard**: 
+**Game resets with the ball randomly placed in the middle after a score point is accquired by player 1 or player 2**: 
 
-![image](https://user-images.githubusercontent.com/73240114/147376122-9d3f495d-78d5-4ceb-aad6-a99882f01e83.png)
+![image](https://user-images.githubusercontent.com/73240114/147762740-9c25f1c3-1bdc-4ed5-8983-7a4eb827ec56.png)
+
+
+**Displays scores of Player1 and Player2 **: 
+
+![image](https://user-images.githubusercontent.com/73240114/147763811-05074b83-bdec-45d9-bf44-d9d98582b8ae.png)
 
 
 ## Requirements 🔧
@@ -40,7 +46,7 @@ Java version 8 or higher.
 
 #### 2) Download the repository files (project) from the download section or clone this project by typing in the bash the following command:
 
-#### 3) git clonehttps://github.com/JJudge0/Snake-Game.git
+#### 3) git clone: https://github.com/JJudge0/Ping-Pong-Game.git
 Import it in VS CODE or any other Java IDE.
 
 Run the application :D
