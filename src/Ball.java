@@ -3,9 +3,9 @@ import java.awt.*;
 import java.awt.event.*;
 import java.util.*;
 import javax.swing.*;
+// Note: Remember Ball moves on X axis aswell Y axis
 public class Ball extends Rectangle  {
     
-
     Random random;
     int xVelocity;
 	int yVelocity;
